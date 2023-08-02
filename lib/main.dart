@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluuter_assignment/view/login.dart';
+import 'package:fluuter_assignment/view/signup_screen.dart';
 
 import 'homeview.dart';
 
@@ -12,6 +13,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: InitScreen());
+    return const MaterialApp(
+        debugShowCheckedModeBanner: false, home: InitScreen());
   }
 }

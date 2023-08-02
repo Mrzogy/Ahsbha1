@@ -18,7 +18,7 @@ class Homeview extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Padding(
+                const Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ClipRRect(
                     // borderRadius: BorderRadius.circular(20),

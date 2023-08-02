@@ -1,4 +1,10 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:fluuter_assignment/coumponent/Logo.dart';
+import 'package:fluuter_assignment/coumponent/loginButton.dart';
+import 'package:fluuter_assignment/coumponent/signupButton.dart';
+import 'package:fluuter_assignment/coumponent/textCentr.dart';
 
 class InitScreen extends StatelessWidget {
   const InitScreen({super.key});
@@ -8,25 +14,9 @@ class InitScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xffF9EFE5),
       appBar: AppBar(
-        backgroundColor: Color(0xffF9EFE5),
-        elevation: 0,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Image.asset("assets/logo/logo.png"),
-            SizedBox(
-              width: 8,
-            ),
-            Text(
-              "Ahsabha",
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 23,
-                  fontWeight: FontWeight.bold),
-            ),
-          ],
-        ),
-      ),
+          backgroundColor: Color(0xffF9EFE5),
+          elevation: 0,
+          title: const Logo()),
       body: SafeArea(
           bottom: false,
           child: Column(
@@ -49,48 +39,14 @@ class InitScreen extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
+                      TextsCenter(),
                       Column(
                         children: [
-                          Text(
-                            "Easy Way Save",
-                            style: TextStyle(
-                                fontSize: 40, fontWeight: FontWeight.bold),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 25, vertical: 10),
-                            child: Text(
-                              "Make your payment experience more better tody. No additional admin fee",
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: Text("Login"),
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.black,
-                              fixedSize: Size(
-                                  MediaQuery.of(context).size.width - 50, 50),
-                            ),
-                          ),
+                          ButtonLogin(),
                           SizedBox(
                             height: 10,
                           ),
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: Text("Login"),
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Color(0xffF8F8F8),
-                              foregroundColor: Colors.black,
-                              side: const BorderSide(color: Colors.black),
-                              fixedSize: Size(
-                                  MediaQuery.of(context).size.width - 50, 50),
-                            ),
-                          ),
+                          Button()
                         ],
                       )
                     ],
@@ -100,5 +56,14 @@ class InitScreen extends StatelessWidget {
             ],
           )),
     );
+  }
+}
+
+class image extends StatelessWidget {
+  const image({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
