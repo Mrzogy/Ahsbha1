@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class Forms extends StatelessWidget {
-  Forms({
+class Formssecure extends StatelessWidget {
+  Formssecure({
     super.key,
-    this.name,
+    this.name = "Password",
   });
   final String? name;
   @override
@@ -13,6 +13,9 @@ class Forms extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         TextField(
+            obscureText: true,
+            enableSuggestions: false,
+            autocorrect: false,
             decoration: InputDecoration(
                 border: UnderlineInputBorder(),
                 labelText: name,
