@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluuter_assignment/coumponent/form.dart';
 import 'package:fluuter_assignment/coumponent/navigationButton.dart';
 import 'package:fluuter_assignment/coumponent/navigationSignUp.dart';
+import 'package:fluuter_assignment/coumponent/secoreForm.dart';
 import 'package:fluuter_assignment/view/login.dart';
 
 class signUp_screen extends StatelessWidget {
@@ -50,9 +51,7 @@ class signUp_screen extends StatelessWidget {
                               SizedBox(
                                 height: 20,
                               ),
-                              Forms(
-                                name: "Password",
-                              ),
+                              Formssecure(),
                               SizedBox(
                                 height: 90,
                               ),
