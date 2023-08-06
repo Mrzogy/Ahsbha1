@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:fluuter_assignment/coumponent/form.dart';
-import 'package:fluuter_assignment/coumponent/navigationButton.dart';
+//import 'package:fluuter_assignment/coumponent/image%20loding.dart';
+//import 'package:fluuter_assignment/coumponent/navigationButton.dart';
 import 'package:fluuter_assignment/coumponent/navigationSignUp.dart';
 import 'package:fluuter_assignment/coumponent/secoreForm.dart';
-import 'package:fluuter_assignment/view/login.dart';
+//import 'package:fluuter_assignment/view/login.dart';
 
-class signUp_screen extends StatelessWidget {
-  const signUp_screen({super.key});
+class SignUp_Screen extends StatelessWidget {
+  const SignUp_Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF9EFE5),
+      backgroundColor: const Color(0xffF9EFE5),
       body: SafeArea(
           bottom: false,
           child: Column(
@@ -26,7 +27,7 @@ class signUp_screen extends StatelessWidget {
               ),
               Container(
                 width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xffF8F8F8),
                 ),
                 child: Column(
@@ -34,28 +35,31 @@ class signUp_screen extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Container(
+                        SizedBox(
                           width: 400,
                           height: 400,
                           child: Column(
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               Forms(
                                 name: "Email",
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 20,
                               ),
                               Formssecure(),
-                              SizedBox(
+                              TextFormField(
+                                decoration: const InputDecoration(hintText: "Aloli",),
+                              ),
+                              const SizedBox(
                                 height: 90,
                               ),
-                              NavigationButtonSignUp(),
+                              const NavigationButtonSignUp(),
                             ],
                           ),
                         ),

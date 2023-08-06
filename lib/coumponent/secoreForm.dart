@@ -1,7 +1,8 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class Formssecure extends StatelessWidget {
-  Formssecure({
+  const Formssecure({
     super.key,
     this.name = "Password",
   });
@@ -17,9 +18,9 @@ class Formssecure extends StatelessWidget {
             enableSuggestions: false,
             autocorrect: false,
             decoration: InputDecoration(
-                border: UnderlineInputBorder(),
+                border: const UnderlineInputBorder(),
                 labelText: name,
-                suffixIcon: Icon(Icons.remove_red_eye)))
+                suffixIcon: const Icon(Icons.remove_red_eye)))
       ],
     ));
   }

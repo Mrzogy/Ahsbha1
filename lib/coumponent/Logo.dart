@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
 class Logo extends StatelessWidget {
@@ -15,15 +16,17 @@ class Logo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset(assest),
-        SizedBox(
+        const SizedBox(
           width: 8,
         ),
         Text(
           tittle,
-          style: TextStyle(
+          style: const TextStyle(
               color: Colors.black, fontSize: 23, fontWeight: FontWeight.bold),
         ),
       ],
     );
   }
 }
+
+

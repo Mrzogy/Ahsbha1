@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluuter_assignment/view/login.dart';
+//import 'package:fluuter_assignment/view/login.dart';
 import 'package:fluuter_assignment/view/signup.dart';
 
 class ButtonLogin extends StatelessWidget {
@@ -9,8 +9,11 @@ class ButtonLogin extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => signUp()));
+        Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(builder: (context) => const SignUp()),
+            // ignore: avoid_types_as_parameter_names
+            (route) => false);
       },
       child: Text(login),
       style: ElevatedButton.styleFrom(

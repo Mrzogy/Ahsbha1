@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:fluuter_assignment/view/login.dart';
 
@@ -11,7 +12,7 @@ class NavigationButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => InitScreen()));
+            context, MaterialPageRoute(builder: (context) => const InitScreen()));
       },
       child: Text("login"),
       style: ElevatedButton.styleFrom(

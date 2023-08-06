@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluuter_assignment/secondscreen.dart';
+//import 'package:fluuter_assignment/secondscreen.dart';
 
 class Homeview extends StatelessWidget {
   const Homeview({super.key});
@@ -19,7 +19,7 @@ class Homeview extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 const Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: EdgeInsets.all(8.0),
                   child: ClipRRect(
                     // borderRadius: BorderRadius.circular(20),
                     child: Image(
@@ -30,27 +30,27 @@ class Homeview extends StatelessWidget {
                     ),
                   ),
                 ),
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Center(
                       // padding: const EdgeInsets.only(left: 5),
-                      child: const Text("Name: Abdulrazaq"),
+                      child: Text("Name: Abdulrazaq"),
                     ),
                     Center(
                       // padding: const EdgeInsets.only(left: 5),
-                      child: const Text("Email: 3boode@gmai.com"),
+                      child: Text("Email: 3boode@gmai.com"),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 30,
                 ),
                 Padding(
                   padding: const EdgeInsets.all(5),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
-                    child: Image(
+                    child: const Image(
                       image: NetworkImage(
                           'https://www.tutorialkart.com/img/hummingbird.png'),
                       width: 100,
@@ -60,40 +60,52 @@ class Homeview extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 150,
                   child: Text(
                     "This text is very very very very very very very very very very very very very very very very very very very very very very very very very long",
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 50,
                 ),
                 Container(
                   width: 200,
                   height: 200,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.blueAccent,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.7),
+                        spreadRadius: 0.2,
+                        blurRadius: 7,
+                        offset: const Offset(0, 3), // changes position of shadow
+                      ),
+                    ],
+                  ),
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
-                        Text('Name Abdulrazaq'),
-                        Text('Email: 3bode@gmail,com'),
-                        SizedBox(
+                        const Text('Name Abdulrazaq'),
+                        const Text('Email: 3bode@gmail,com'),
+                        const SizedBox(
                           height: 80,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            Text('G-Class'),
-                            SizedBox(
+                            const Text('G-Class'),
+                            const SizedBox(
                               width: 40,
                             ),
                             ClipRRect(
@@ -109,18 +121,6 @@ class Homeview extends StatelessWidget {
                           ],
                         )
                       ]),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.blueAccent,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.7),
-                        spreadRadius: 0.2,
-                        blurRadius: 7,
-                        offset: Offset(0, 3), // changes position of shadow
-                      ),
-                    ],
-                  ),
                 ),
               ],
             ),
