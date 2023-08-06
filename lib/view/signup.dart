@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluuter_assignment/coumponent/form.dart';
 //import 'package:fluuter_assignment/coumponent/loginButton.dart';
-import 'package:fluuter_assignment/coumponent/navigationButton.dart';
-import 'package:fluuter_assignment/coumponent/secoreForm.dart';
+import 'package:fluuter_assignment/coumponent/navigation_button.dart';
+import 'package:fluuter_assignment/coumponent/secore_form.dart';
 //import 'package:fluuter_assignment/coumponent/signupButton.dart';
 //import 'package:fluuter_assignment/coumponent/textCentr.dart';
 //import 'package:fluuter_assignment/view/login.dart';
@@ -31,7 +31,7 @@ class SignUp extends StatelessWidget {
                 decoration: const BoxDecoration(
                   color: Color(0xffF8F8F8),
                 ),
-                child: Column(
+                child: const Column(
                   //mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Column(
@@ -41,26 +41,26 @@ class SignUp extends StatelessWidget {
                           height: 400,
                           child: Column(
                             children: [
-                              const SizedBox(
+                              SizedBox(
                                 height: 20,
                               ),
                               Forms(
                                 name: "Email",
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 height: 20,
                               ),
                               Forms(
                                 name: "Name",
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 height: 20,
                               ),
                               Formssecure(),
-                              const SizedBox(
+                              SizedBox(
                                 height: 90,
                               ),
-                              const NavigationButton(),
+                              NavigationButton(),
                             ],
                           ),
                         ),

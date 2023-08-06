@@ -2,10 +2,10 @@
 //import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:fluuter_assignment/coumponent/Logo.dart';
-import 'package:fluuter_assignment/coumponent/loginButton.dart';
-import 'package:fluuter_assignment/coumponent/signupButton.dart';
-import 'package:fluuter_assignment/coumponent/textCentr.dart';
+import 'package:fluuter_assignment/coumponent/logo_logos.dart';
+import 'package:fluuter_assignment/coumponent/login_button.dart';
+import 'package:fluuter_assignment/coumponent/signup_button.dart';
+import 'package:fluuter_assignment/coumponent/text_half.dart';
 //import 'package:fluuter_assignment/view/signup_screen.dart';
 
 class InitScreen extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Forms extends StatelessWidget {
-  Forms({
+  const Forms({
     super.key,
     this.name,
   });
@@ -14,9 +14,9 @@ class Forms extends StatelessWidget {
       children: [
         TextField(
             decoration: InputDecoration(
-                border: UnderlineInputBorder(),
+                border: const UnderlineInputBorder(),
                 labelText: name,
-                suffixIcon: Icon(Icons.remove_red_eye)))
+                suffixIcon: const Icon(Icons.remove_red_eye)))
       ],
     ));
   }

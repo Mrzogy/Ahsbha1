@@ -1,4 +1,3 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
 
 class TextsCenter extends StatelessWidget {
@@ -7,7 +6,9 @@ class TextsCenter extends StatelessWidget {
       required this.placholder,
       required this.descripton,
       required this.color,
-      required this.color1, required this.size1, required this.size2});
+      required this.color1,
+      required this.size1,
+      required this.size2});
   final String placholder;
   final String descripton;
   final Color color;
@@ -29,8 +30,7 @@ class TextsCenter extends StatelessWidget {
           ),
           child: Text(
             descripton,
-            style: TextStyle(
-                fontSize: 10, fontWeight: size2, color: color1),
+            style: TextStyle(fontSize: 10, fontWeight: size2, color: color1),
             textAlign: TextAlign.center,
           ),
         ),

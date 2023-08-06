@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class secound extends StatelessWidget {
-  const secound({super.key});
+class Secound extends StatelessWidget {
+  const Secound({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
           child: Column(
         children: [
-          Container(
+          SizedBox(
             width: 100,
             height: 1000,
           )

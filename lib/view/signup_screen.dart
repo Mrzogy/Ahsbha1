@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:fluuter_assignment/coumponent/form.dart';
 //import 'package:fluuter_assignment/coumponent/image%20loding.dart';
 //import 'package:fluuter_assignment/coumponent/navigationButton.dart';
-import 'package:fluuter_assignment/coumponent/navigationSignUp.dart';
-import 'package:fluuter_assignment/coumponent/secoreForm.dart';
+import 'package:fluuter_assignment/coumponent/navigation_signup.dart';
+import 'package:fluuter_assignment/coumponent/secore_form.dart';
 //import 'package:fluuter_assignment/view/login.dart';
 
-class SignUp_Screen extends StatelessWidget {
-  const SignUp_Screen({super.key});
+class Signup extends StatelessWidget {
+  const Signup({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class SignUp_Screen extends StatelessWidget {
                               const SizedBox(
                                 height: 20,
                               ),
-                              Forms(
+                              const Forms(
                                 name: "Email",
                               ),
                               const SizedBox(
@@ -52,7 +52,7 @@ class SignUp_Screen extends StatelessWidget {
                               const SizedBox(
                                 height: 20,
                               ),
-                              Formssecure(),
+                              const Formssecure(),
                               TextFormField(
                                 decoration: const InputDecoration(hintText: "Aloli",),
                               ),

@@ -13,7 +13,6 @@ class Button extends StatelessWidget {
         onPressed: () {
           context.gitpush(widget: const HomePage());
         },
-        child: Text(signup),
         style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xffF8F8F8),
           foregroundColor: Colors.black,
@@ -21,6 +20,7 @@ class Button extends StatelessWidget {
           fixedSize: Size(MediaQuery.of(context).size.width - 50, 50),
           shadowColor: Colors.black,
           elevation: 10,
-        ));
+        ),
+        child: Text(signup));
   }
 }

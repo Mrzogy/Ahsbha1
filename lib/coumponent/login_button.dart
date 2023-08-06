@@ -15,13 +15,13 @@ class ButtonLogin extends StatelessWidget {
             // ignore: avoid_types_as_parameter_names
             (route) => false);
       },
-      child: Text(login),
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.black,
         fixedSize: Size(MediaQuery.of(context).size.width - 50, 50),
         shadowColor: Colors.black,
         elevation: 10,
       ),
+      child: Text(login),
     );
   }
 }
