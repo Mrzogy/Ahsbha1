@@ -4,7 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluuter_assignment/coumponent/logo_logos.dart';
 import 'package:fluuter_assignment/coumponent/login_button.dart';
-import 'package:fluuter_assignment/coumponent/signup_button.dart';
+//import 'package:fluuter_assignment/coumponent/signup_button.dart';
 import 'package:fluuter_assignment/coumponent/text_half.dart';
 //import 'package:fluuter_assignment/view/signup_screen.dart';
 
@@ -55,7 +55,6 @@ class InitScreen extends StatelessWidget {
                           SizedBox(
                             height: 10,
                           ),
-                          Button()
                         ],
                       )
                     ],
@@ -81,7 +80,7 @@ extension Screen on BuildContext {
 extension WidthHight on BuildContext {
   gitpush({required widget}) {
     return Navigator.push(
-        this, MaterialPageRoute(builder: (context) => widget()));
+        this, MaterialPageRoute(builder: (context) => widget));
   }
 
   pop() {

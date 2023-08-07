@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fluuter_assignment/view/clean_tools.dart';
 import 'package:fluuter_assignment/view/login.dart';
-import 'package:fluuter_assignment/view/rive.dart';
+//import 'package:fluuter_assignment/view/rive.dart';
 
 class NavigationButtonSignUp extends StatelessWidget {
   const NavigationButtonSignUp({
@@ -11,7 +12,7 @@ class NavigationButtonSignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        context.gitpush(widget: const Rive());
+        context.gitpush(widget:const CleanTools());
       },
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.black,

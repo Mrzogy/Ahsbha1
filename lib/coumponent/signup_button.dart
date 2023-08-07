@@ -1,8 +1,9 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:fluuter_assignment/view/login.dart';
+import 'package:fluuter_assignment/view/signup_screen.dart';
 //import 'package:fluuter_assignment/view/signup_screen.dart';
-import 'package:fluuter_assignment/view/supabase.dart';
+//import 'package:fluuter_assignment/view/supabase.dart';
 
 class Button extends StatelessWidget {
   const Button({super.key, this.signup = "Sign up"});
@@ -11,7 +12,7 @@ class Button extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         onPressed: () {
-          context.gitpush(widget: const HomePage());
+          context.gitpush(widget: const Signup());
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xffF8F8F8),

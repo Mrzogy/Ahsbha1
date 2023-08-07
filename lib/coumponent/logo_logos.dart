@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class Logo extends StatelessWidget {
   const Logo(
       {super.key,
-      this.assest = "assets/logo/logo.png",
+      this.assest = "assets/images/Vector-2.png",
       this.tittle = "3boode"});
 
   final String assest;
@@ -28,5 +28,3 @@ class Logo extends StatelessWidget {
     );
   }
 }
-
-

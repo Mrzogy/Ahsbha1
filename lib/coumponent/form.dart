@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class Forms extends StatelessWidget {
   const Forms({
     super.key,
-    this.name,
+    required this.name,
   });
-  final String? name;
+  final String name;
   @override
   Widget build(BuildContext context) {
     return Form(

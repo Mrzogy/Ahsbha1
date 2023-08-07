@@ -30,7 +30,7 @@ class Signup extends StatelessWidget {
                 decoration: const BoxDecoration(
                   color: Color(0xffF8F8F8),
                 ),
-                child: Column(
+                child: const Column(
                   //mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Column(
@@ -40,26 +40,24 @@ class Signup extends StatelessWidget {
                           height: 400,
                           child: Column(
                             children: [
-                              const SizedBox(
+                              SizedBox(
                                 height: 20,
                               ),
-                              const Forms(
+                              Forms(
                                 name: "Email",
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 height: 20,
                               ),
-                              const SizedBox(
+                              SizedBox(
                                 height: 20,
                               ),
-                              const Formssecure(),
-                              TextFormField(
-                                decoration: const InputDecoration(hintText: "Aloli",),
-                              ),
-                              const SizedBox(
+                              Formssecure(),
+                             
+                              SizedBox(
                                 height: 90,
                               ),
-                              const NavigationButtonSignUp(),
+                              NavigationButtonSignUp(),
                             ],
                           ),
                         ),

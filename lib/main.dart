@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:fluuter_assignment/view/post.dart';
+import 'package:fluuter_assignment/view/login.dart';
+
+
+//import 'package:fluuter_assignment/view/clean_tools.dart';
+//import 'package:fluuter_assignment/view/information_tools.dart';
+//import 'package:fluuter_assignment/view/total_amount.dart';
+//import 'package:fluuter_assignment/view/login.dart';
+//import 'package:fluuter_assignment/view/signup_screen.dart';
+//import 'package:fluuter_assignment/view/post.dart';
 //import 'package:fluuter_assignment/view/rive.dart';
 //import 'package:fluuter_assignment/view/signup_screen.dart';
 //import 'package:fluuter_assignment/view/supabase.dart';
@@ -24,6 +32,6 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-        debugShowCheckedModeBanner: false, home: Test());
+        debugShowCheckedModeBanner: false, home: InitScreen());
   }
 }
